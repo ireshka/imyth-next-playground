@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.imageWrapper {
+  margin-right: 2rem;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  padding: 0 2rem 0 2rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    padding: 0 0 0 1rem;
+    font-size: 1.5rem;
+  }
+
+  .imageWrapper {
+    margin-right: 1rem;
+  }
+}
