@@ -27,12 +27,12 @@ type Props = {
 export default function Home({ allDocs }: Props): ReactNode {
   return (
     <>
-      <PageLayout home title="About me">
+      <PageLayout home>
         <p>
-          It is a simple blog about mythological creatures. If you want to know
-          more, click and check{" "}
-          <Link href="/first-post" passHref>
-            <TextLink underline>First Page</TextLink>
+          It is a <code>next.js</code> playground about mythological creatures.
+          If you want to know more, click and check{" "}
+          <Link href="/about" passHref>
+            <TextLink underline>About Page</TextLink>
           </Link>
           .
         </p>

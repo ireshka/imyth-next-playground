@@ -4,7 +4,7 @@ import { GetOneDocResult } from "../../lib/docs";
 export type PageLayoutProps = {
   children?: ReactNode;
   home?: boolean;
-  title: string;
+  title?: string;
   postData?: GetOneDocResult;
 };
 
