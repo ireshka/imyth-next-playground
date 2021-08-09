@@ -48,7 +48,7 @@ export const PageLayout = ({
         <title>{pageTitle}</title>
         <meta name="description" content={`Ireshka notes - ${title}`} />
       </Head>
-      <section className={styles.wrapper}>
+      <article className={styles.wrapper}>
         {title && (
           <header className={styles.header}>
             <div className={styles.titleWrapper}>
@@ -64,10 +64,10 @@ export const PageLayout = ({
         )}
         {(home || !postData) && children && <DocContent>{children}</DocContent>}
         {contentHTML && (
-          <article>
+          <DocContent>
             <div dangerouslySetInnerHTML={{ __html: contentHTML }} />
             {source && <SourceLinks sourceLinks={source} />}
-          </article>
+          </DocContent>
         )}
         {!home && (
           <footer className={styles.footer}>
@@ -82,7 +82,7 @@ export const PageLayout = ({
             </Link>
           </footer>
         )}
-      </section>
+      </article>
     </>
   );
 };
