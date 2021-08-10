@@ -1,20 +1,18 @@
-import Link from "next/link";
 import Head from "next/head";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDoubleLeft } from "@fortawesome/free-solid-svg-icons";
+
 import {
   PageLayoutProps,
   PageLayoutReturns,
 } from "./PageLayout.component.types";
 import { GetOneDocResult, SourceLink } from "../../lib/docs";
 import styles from "./PageLayout.module.css";
-import { TextLink } from "../TextLink/TextLink.component";
 import { TagList } from "../TagList/TagList.component";
 import { DocContent } from "../DocContent/DocContent.component";
 import { isDefined } from "../../utils";
 import { SourceLinks } from "../SourceLinks/SourceLinks.component";
 import { Date } from "../Date/Date.component";
 import { SITE_TITLE } from "../../constants/siteInfo.constants";
+import { ReturnLink } from "../ReturnLink/ReturnLink.component";
 
 const generateSourceData = (
   postData: GetOneDocResult | undefined
@@ -71,15 +69,7 @@ export const PageLayout = ({
         )}
         {!home && (
           <footer className={styles.footer}>
-            <Link href="/" passHref>
-              <TextLink>
-                <FontAwesomeIcon
-                  icon={faAngleDoubleLeft}
-                  className={styles.footerIcon}
-                />{" "}
-                To Home
-              </TextLink>
-            </Link>
+            <ReturnLink href="/" text="To Home" />
           </footer>
         )}
       </article>
