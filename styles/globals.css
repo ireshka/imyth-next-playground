@@ -25,3 +25,13 @@ image {
 * {
   box-sizing: border-box;
 }
+
+
+/* Variables */
+:root {
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --heading-lg: 2em;
+  --heading-md: 1.5em;
+  --heading-sm: 1.15em;
+}

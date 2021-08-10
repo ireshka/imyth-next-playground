@@ -1,0 +1,7 @@
+.default {
+  font-size: var(--heading-md);
+  color: var(--color-black);
+  padding: 0 0;
+  margin: 0;
+  font-weight: bold;
+}

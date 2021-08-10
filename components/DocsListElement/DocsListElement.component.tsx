@@ -6,6 +6,7 @@ import {
 import { TagList } from "../TagList/TagList.component";
 import styles from "./DocsListElement.module.css";
 import { Date } from "../Date/Date.component";
+import { Heading } from "../Heading/Heading.component";
 
 export const DocsListElement = ({
   metadata,
@@ -17,7 +18,9 @@ export const DocsListElement = ({
       <div className={styles.header}>
         <Link href={link}>
           <a className={styles.link}>
-            <h3 className={styles.title}>{metadata.title}</h3>
+            <Heading as="h3" className={styles.heading}>
+              {metadata.title}
+            </Heading>
           </a>
         </Link>
         <small className={styles.dateWrapper}>

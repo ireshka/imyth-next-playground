@@ -4,6 +4,7 @@ import {
   SiteHeaderProps,
   SiteHeaderReturns,
 } from "./SiteHeader.component.types";
+import { Heading } from "../Heading/Heading.component";
 import styles from "./SiteHeader.module.css";
 
 export const SiteHeader = ({
@@ -25,6 +26,8 @@ export const SiteHeader = ({
         </a>
       </Link>
     </div>
-    <h1 className={styles.title}>{title}</h1>
+    <Heading as="h1" className={styles.title}>
+      {title}
+    </Heading>
   </header>
 );

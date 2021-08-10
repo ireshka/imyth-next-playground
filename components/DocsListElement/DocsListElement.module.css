@@ -15,8 +15,9 @@
   margin-bottom: 10px;
 }
 
-.title {
-  margin: 0;
+.heading {
+  font-size: var(--heading-sm);
+  padding: 0;
 }
 
 .link {

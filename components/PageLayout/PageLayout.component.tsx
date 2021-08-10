@@ -5,7 +5,6 @@ import {
   PageLayoutReturns,
 } from "./PageLayout.component.types";
 import { GetOneDocResult, SourceLink } from "../../lib/docs";
-import styles from "./PageLayout.module.css";
 import { TagList } from "../TagList/TagList.component";
 import { DocContent } from "../DocContent/DocContent.component";
 import { isDefined } from "../../utils";
@@ -13,6 +12,8 @@ import { SourceLinks } from "../SourceLinks/SourceLinks.component";
 import { Date } from "../Date/Date.component";
 import { SITE_TITLE } from "../../constants/siteInfo.constants";
 import { ReturnLink } from "../ReturnLink/ReturnLink.component";
+import { Heading } from "../Heading/Heading.component";
+import styles from "./PageLayout.module.css";
 
 const generateSourceData = (
   postData: GetOneDocResult | undefined
@@ -50,7 +51,7 @@ export const PageLayout = ({
         {title && (
           <header className={styles.header}>
             <div className={styles.titleWrapper}>
-              <h2 className={styles.title}>{title}</h2>
+              <Heading className={styles.title}>{title}</Heading>
               {tags && <TagList tags={tags} />}
             </div>
             {data && (
