@@ -1,4 +1,4 @@
-import { SiteFooter } from "../../components/SiteFooter/SiteFooter.component";
+import { SiteFooter } from "../../components/Site/SiteFooter/SiteFooter.component";
 
 import {
   AUTHOR_NAME,

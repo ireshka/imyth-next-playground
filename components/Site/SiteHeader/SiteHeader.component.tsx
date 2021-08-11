@@ -4,7 +4,7 @@ import {
   SiteHeaderProps,
   SiteHeaderReturns,
 } from "./SiteHeader.component.types";
-import { Heading } from "../Heading/Heading.component";
+import { Heading } from "../../shared/Heading/Heading.component";
 import styles from "./SiteHeader.module.css";
 
 export const SiteHeader = ({

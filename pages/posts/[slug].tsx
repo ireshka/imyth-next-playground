@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
-import { PageLayout } from "../../components/PageLayout/PageLayout.component";
+import { PageLayout } from "../../components/Page/PageLayout/PageLayout.component";
 
 import { docs, GetOneDocResult } from "../../lib/docs";
 
@@ -29,7 +29,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<Result, Params> = async ({
   params,
 }) => {
-  const fileName = `${params!.slug}.md`;
+  const fileName = `${params?.slug}.md`;
   const docsData = await docs.getOneDoc(fileName);
   return {
     props: {

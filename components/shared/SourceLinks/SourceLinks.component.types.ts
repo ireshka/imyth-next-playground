@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { SourceLink } from "../../lib/docs";
+import { SourceLink } from "../../../lib/docs";
 
 export type SourceLinksProps = {
   sourceLinks: SourceLink[];

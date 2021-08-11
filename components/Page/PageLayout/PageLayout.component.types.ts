@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { GetOneDocResult } from "../../lib/docs";
+import { GetOneDocResult } from "../../../lib/docs";
 
 export type PageLayoutProps = {
   children?: ReactNode;

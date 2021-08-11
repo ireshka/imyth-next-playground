@@ -2,7 +2,7 @@ import {
   SiteFooterProps,
   SiteFooterReturns,
 } from "./SiteFooter.component.types";
-import { TextLink } from "../TextLink/TextLink.component";
+import { TextLink } from "../../shared/TextLink/TextLink.component";
 import styles from "./SiteFooter.module.css";
 
 export const SiteFooter = ({

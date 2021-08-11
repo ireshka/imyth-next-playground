@@ -1,4 +1,4 @@
-import { Metadata } from "../../lib/docs";
+import { Metadata } from "../../../lib/docs";
 
 export type DocsListElementProps = {
   metadata: Metadata;

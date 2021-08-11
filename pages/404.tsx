@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { PageLayout } from "../components/PageLayout/PageLayout.component";
+import { PageLayout } from "../components/Page/PageLayout/PageLayout.component";
 
 const Custom404 = (): Custom404Return => (
   <PageLayout title="Page not found">

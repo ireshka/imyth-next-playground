@@ -34,4 +34,7 @@ image {
   --heading-lg: 2em;
   --heading-md: 1.5em;
   --heading-sm: 1.15em;
+  --text-sm: 0.95em;
+  --text-md: 1em;
+  --text-lg: 1.15em;
 }

@@ -1,4 +1,4 @@
-import { SiteHeader } from "../../components/SiteHeader/SiteHeader.component";
+import { SiteHeader } from "../../components/Site/SiteHeader/SiteHeader.component";
 
 import { SITE_LOGO, SITE_TITLE } from "../../constants/siteInfo.constants";
 

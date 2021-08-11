@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { PageLayout } from "../components/PageLayout/PageLayout.component";
+import { PageLayout } from "../components/Page/PageLayout/PageLayout.component";
 
 const About = (): AboutReturn => (
   <PageLayout title="About project">About page will be here.</PageLayout>

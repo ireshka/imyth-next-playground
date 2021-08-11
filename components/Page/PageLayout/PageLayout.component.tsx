@@ -4,15 +4,15 @@ import {
   PageLayoutProps,
   PageLayoutReturns,
 } from "./PageLayout.component.types";
-import { GetOneDocResult, SourceLink } from "../../lib/docs";
-import { TagList } from "../TagList/TagList.component";
-import { DocContent } from "../DocContent/DocContent.component";
-import { isDefined } from "../../utils";
-import { SourceLinks } from "../SourceLinks/SourceLinks.component";
-import { Date } from "../Date/Date.component";
-import { SITE_TITLE } from "../../constants/siteInfo.constants";
-import { ReturnLink } from "../ReturnLink/ReturnLink.component";
-import { Heading } from "../Heading/Heading.component";
+import { GetOneDocResult, SourceLink } from "../../../lib/docs";
+import { TagList } from "../../shared/TagList/TagList.component";
+import { DocContent } from "../../shared/DocContent/DocContent.component";
+import { isDefined } from "../../../utils";
+import { SourceLinks } from "../../shared/SourceLinks/SourceLinks.component";
+import { Date } from "../../shared/Date/Date.component";
+import { SITE_TITLE } from "../../../constants/siteInfo.constants";
+import { ReturnLink } from "../../shared/ReturnLink/ReturnLink.component";
+import { Heading } from "../../shared/Heading/Heading.component";
 import styles from "./PageLayout.module.css";
 
 const generateSourceData = (
