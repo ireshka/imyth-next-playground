@@ -2,6 +2,7 @@
   position: relative;
   transition: color 0.2s ease-in-out;
   text-decoration: none;
+  display: inline-block;
 }
 
 .linkLight {
@@ -29,14 +30,13 @@
   bottom: -2px;
   content: "";
   height: 1px;
-  left: 0;
+  left: -2px;
   opacity: 0;
   position: absolute;
-  right: 0;
+  right: -2px;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
-  width: 100%;
 }
 
 .underline::before {
@@ -53,14 +53,13 @@
   bottom: -2px;
   content: "";
   height: 1px;
-  left: 0;
+  left: -2px;
   opacity: 0;
   position: absolute;
-  right: 0;
+  right: -2px;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
-  width: 100%;
 }
 
 .linkLight.underline::before {
