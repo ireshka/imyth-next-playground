@@ -20,9 +20,7 @@ export const PostHeader = ({
       </div>
 
       <div>
-        <span className={styles.date}>
-          <Date dateString={date} />
-        </span>
+        <Date dateString={date} className={styles.date} />
       </div>
     </>
   );

@@ -23,8 +23,8 @@ export const DocsListElement = ({
             </Heading>
           </a>
         </Link>
-        <small className={styles.dateWrapper}>
-          <Date dateString={metadata.date} />
+        <small>
+          <Date dateString={metadata.date} className={styles.dateWrapper} />
         </small>
       </div>
       <TagList tags={metadata.tags} />
