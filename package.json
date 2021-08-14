@@ -9,8 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "ts-watch": "tsc --watch --noEmit",
-    "eslint-check": "eslint {components, constants, containers, lib, pages, schema, utils}/**/*.{tsx,ts}",
-    "eslint-fix": "eslint {components, constants, containers, lib, pages, schema, utils}/**/*.{tsx,ts} --fix"
+    "eslint-check": "eslint {components,constants,containers,lib,pages,schema,utils}/**/*.{tsx,ts}",
+    "eslint-fix": "eslint {components,constants,containers,lib,pages,schema,utils}/**/*.{tsx,ts} --fix"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
