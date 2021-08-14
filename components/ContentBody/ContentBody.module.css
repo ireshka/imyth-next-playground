@@ -8,6 +8,22 @@
 .wrapper h5,
 .wrapper h6 {
   font-weight: bold;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.wrapper h3::before,
+.wrapper h4::before,
+.wrapper h5::before,
+.wrapper h6::before {
+  content: "";
+  height: 1px;
+  left: 0;
+  right: -10px;
+  background-color: black;
+  bottom: 0;
+  position: absolute;
 }
 
 .wrapper h3 {

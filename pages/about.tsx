@@ -1,8 +1,10 @@
 import { ReactElement } from "react";
-import { PageLayout } from "../components/Page/PageLayout/PageLayout.component";
+import { ArticleContainer } from "../containers/Article/Article.container";
 
 const About = (): AboutReturn => (
-  <PageLayout title="About project">About page will be here.</PageLayout>
+  <ArticleContainer title="About project">
+    <p>About page will be here.</p>
+  </ArticleContainer>
 );
 
 type AboutReturn = ReactElement;

@@ -1,19 +1,16 @@
 import { ReactNode } from "react";
 
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
-import { PageLayout } from "../../components/Page/PageLayout/PageLayout.component";
+import { PostContainer } from "../../containers/Post/Post.container";
 
 import { docs, GetOneDocResult } from "../../lib/docs";
 
 export default function Post({
   docsData,
 }: InferGetStaticPropsType<typeof getStaticProps>): ReactNode {
-  const {
-    metadata: { title },
-  } = docsData;
   return (
     <>
-      <PageLayout title={title} postData={docsData} />
+      <PostContainer postData={docsData} />
     </>
   );
 }
