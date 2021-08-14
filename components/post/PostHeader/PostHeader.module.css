@@ -1,0 +1,11 @@
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0.5rem;
+}
+
+.date {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.85rem;
+}

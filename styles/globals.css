@@ -25,3 +25,21 @@ image {
 * {
   box-sizing: border-box;
 }
+
+/* Prevent page jump when browser adds a scrollbar  */
+html {
+  margin-right: calc(-100vw + 100%);
+  overflow-x: hidden;
+}
+
+/* Variables */
+:root {
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --heading-lg: 2rem;
+  --heading-md: 1.5rem;
+  --heading-sm: 1.15rem;
+  --text-sm: 0.95rem;
+  --text-md: 1rem;
+  --text-lg: 1.05rem;
+}

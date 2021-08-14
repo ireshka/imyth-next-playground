@@ -1,4 +1,4 @@
-import { SiteLayout } from "../../components/SiteLayout/SiteLayout.component";
+import { SiteLayout } from "../../components/Site/SiteLayout/SiteLayout.component";
 import { SiteHeaderContainer } from "../SiteHeader/SiteHeader.container";
 import { SiteFooterContainer } from "../SiteFooter/SiteFooter.container";
 import {

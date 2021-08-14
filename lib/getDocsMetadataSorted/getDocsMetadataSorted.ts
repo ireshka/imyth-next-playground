@@ -6,6 +6,8 @@ import {
 import { getDocsMetadata } from "../getDocsMetadata/getDocsMetadata";
 import { GetDocsMetadataResult } from "../getDocsMetadata/getDocsMetada.types";
 
+import { sortStrings } from "../../utils";
+
 const defaultSortOption: GetDocsMetadataSortedProps = {
   field: "date",
   order: "descend",
@@ -22,23 +24,10 @@ export const getDocsMetadataSorted = async (
     a: GetDocsMetadataResult,
     b: GetDocsMetadataResult
   ) => {
-    if (order === "ascend") {
-      if (a.metadata[field] < b.metadata[field]) {
-        return -1;
-      }
-      if (a.metadata[field] > b.metadata[field]) {
-        return 1;
-      }
-      return 0;
-    }
+    const valueA = a.metadata[field];
+    const valueB = b.metadata[field];
 
-    if (a.metadata[field] < b.metadata[field]) {
-      return 1;
-    }
-    if (a.metadata[field] > b.metadata[field]) {
-      return -1;
-    }
-    return 0;
+    return sortStrings(valueA, valueB, order);
   };
 
   return docs.sort(compareStrings);
