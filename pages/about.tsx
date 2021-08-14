@@ -1,11 +1,7 @@
 import { ReactElement } from "react";
-import { ArticleContainer } from "../containers/Article/Article.container";
+import { PageAboutContent } from "../components/pages/PageAbout/PageAboutContent.component";
 
-const About = (): AboutReturn => (
-  <ArticleContainer title="About project">
-    <p>About page will be here.</p>
-  </ArticleContainer>
-);
+const About = (): AboutReturn => <PageAboutContent />;
 
 type AboutReturn = ReactElement;
 
