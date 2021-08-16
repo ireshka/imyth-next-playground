@@ -1,5 +1,5 @@
 import matter from "gray-matter";
-import remark from "remark";
+import { remark } from "remark";
 import html from "remark-html";
 import path from "path";
 import fs from "fs";
@@ -27,9 +27,7 @@ const getErrorText = (error: Error | z.ZodError, fullPath: string): string => {
   return errorText;
 };
 
-export const getDataFromDoc = async (
-  fileName: string
-): Promise<GetDataFromDocResult> => {
+export const getDataFromDoc = async (fileName: string): Promise<GetDataFromDocResult> => {
   const fullPath = path.join(DOCS_PATH, fileName);
   try {
     const id = fileName.replace(/\.md$/, "");
