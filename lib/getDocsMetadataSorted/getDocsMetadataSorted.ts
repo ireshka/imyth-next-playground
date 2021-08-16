@@ -14,16 +14,13 @@ const defaultSortOption: GetDocsMetadataSortedProps = {
 };
 
 export const getDocsMetadataSorted = async (
-  sortOption: GetDocsMetadataSortedProps = defaultSortOption
+  sortOption: GetDocsMetadataSortedProps = defaultSortOption,
 ): Promise<GetDocsMetadataSortedResult[]> => {
   const docs = await getDocsMetadata();
 
   const { field, order } = sortOption;
 
-  const compareStrings = (
-    a: GetDocsMetadataResult,
-    b: GetDocsMetadataResult
-  ) => {
+  const compareStrings = (a: GetDocsMetadataResult, b: GetDocsMetadataResult) => {
     const valueA = a.metadata[field];
     const valueB = b.metadata[field];
 

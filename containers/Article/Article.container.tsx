@@ -1,7 +1,4 @@
-import {
-  ArticleContainerProps,
-  ArticleContainerReturns,
-} from "./Article.container.types";
+import { ArticleContainerProps, ArticleContainerReturns } from "./Article.container.types";
 
 import { SiteHead } from "../../components/Site/SiteHead/SiteHead.component";
 import { Heading } from "../../components/shared/Heading/Heading.component";

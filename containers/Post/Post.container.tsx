@@ -1,7 +1,4 @@
-import {
-  PostContainerProps,
-  PostContainerReturns,
-} from "./Post.container.types";
+import { PostContainerProps, PostContainerReturns } from "./Post.container.types";
 
 import { SiteHead } from "../../components/Site/SiteHead/SiteHead.component";
 
@@ -10,9 +7,7 @@ import { PostHeader } from "../../components/post/PostHeader/PostHeader.componen
 import { SourceLinks } from "../../components/shared/SourceLinks/SourceLinks.component";
 import { ContentBody } from "../../components/ContentBody/ContentBody.component";
 
-export const PostContainer = ({
-  postData,
-}: PostContainerProps): PostContainerReturns => {
+export const PostContainer = ({ postData }: PostContainerProps): PostContainerReturns => {
   const { contentHTML, metadata } = postData;
   const { source, title } = metadata;
   const postHeader = <PostHeader metadata={metadata} />;

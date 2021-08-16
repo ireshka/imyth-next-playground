@@ -9,8 +9,8 @@ const Header = () => <Heading>Typescript & myths</Heading>;
 
 const Main = () => (
   <p className={styles.introduction}>
-    It is a <code>next.js</code> playground about mythological creatures. If you
-    want to know more, click and check{" "}
+    It is a <code>next.js</code> playground about mythological creatures. If you want to know more,
+    click and check{" "}
     <Link href="/about" passHref>
       <TextLink underline>About Page</TextLink>
     </Link>

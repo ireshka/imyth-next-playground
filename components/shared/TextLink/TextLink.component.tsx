@@ -17,7 +17,7 @@ const TextLink = forwardRef<Reference, TextLinkProps>(
         {children}
       </a>
     );
-  }
+  },
 );
 
 TextLink.displayName = "TextLink";

@@ -23,9 +23,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<Result, Params> = async ({
-  params,
-}) => {
+export const getStaticProps: GetStaticProps<Result, Params> = async ({ params }) => {
   const fileName = `${params?.slug}.md`;
   const docsData = await docs.getOneDoc(fileName);
   return {

@@ -1,8 +1,5 @@
 import { ReturnLink } from "../shared/ReturnLink/ReturnLink.component";
-import {
-  ContentLayoutProps,
-  ContentLayoutReturns,
-} from "./ContentLayout.component.types";
+import { ContentLayoutProps, ContentLayoutReturns } from "./ContentLayout.component.types";
 import styles from "./ContentLayout.module.css";
 
 export const ContentLayout = ({

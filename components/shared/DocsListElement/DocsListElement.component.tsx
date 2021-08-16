@@ -1,17 +1,11 @@
 import Link from "next/link";
-import {
-  DocsListElementProps,
-  DocsListElementReturns,
-} from "./DocsListElement.component.types";
+import { DocsListElementProps, DocsListElementReturns } from "./DocsListElement.component.types";
 import { TagList } from "../TagList/TagList.component";
 import styles from "./DocsListElement.module.css";
 import { Date } from "../Date/Date.component";
 import { Heading } from "../Heading/Heading.component";
 
-export const DocsListElement = ({
-  metadata,
-  id,
-}: DocsListElementProps): DocsListElementReturns => {
+export const DocsListElement = ({ metadata, id }: DocsListElementProps): DocsListElementReturns => {
   const link = `/posts/${encodeURIComponent(id)}`;
   return (
     <li className={styles.wrapper}>

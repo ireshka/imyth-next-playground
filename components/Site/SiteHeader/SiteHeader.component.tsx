@@ -1,16 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  SiteHeaderProps,
-  SiteHeaderReturns,
-} from "./SiteHeader.component.types";
+import { SiteHeaderProps, SiteHeaderReturns } from "./SiteHeader.component.types";
 import { Heading } from "../../shared/Heading/Heading.component";
 import styles from "./SiteHeader.module.css";
 
-export const SiteHeader = ({
-  image,
-  title,
-}: SiteHeaderProps): SiteHeaderReturns => (
+export const SiteHeader = ({ image, title }: SiteHeaderProps): SiteHeaderReturns => (
   <header className={styles.wrapper}>
     <div className={styles.imageWrapper}>
       <Link href="/">

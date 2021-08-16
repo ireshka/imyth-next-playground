@@ -11,9 +11,5 @@ export const Heading = (props: HeadingProps): HeadingReturns => {
   const CustomHeadingElement = as as keyof JSX.IntrinsicElements;
   const { default: defaultClass } = styles;
   const headingClasses = cx(defaultClass, className);
-  return (
-    <CustomHeadingElement className={headingClasses}>
-      {children}
-    </CustomHeadingElement>
-  );
+  return <CustomHeadingElement className={headingClasses}>{children}</CustomHeadingElement>;
 };
